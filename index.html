@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#102e27" />
+  <meta name="description" content="WasteWise AI helps you identify waste from a photo and learn the right way to segregate it, with guidance for Indian waste collection." />
+  <title>WasteWise AI — Every waste has its place.</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <svg aria-hidden="true" class="svg-symbols" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 1.7 6.3L20 10l-6.3 1.7L12 18l-1.7-6.3L4 10l6.3-1.7L12 2Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C10 3 4 7 4 14a6 6 0 0 0 6 6c7 0 11-6 10-16Z"/><path d="M4 21c2-6 7-9 12-12"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 17v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v13H3V7Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-recycle" viewBox="0 0 24 24"><path d="M8 4h7l3 5m-3-1 3 1 1-4M19 12l3 5-3 5h-6m3-3-3 3 4 2M11 21H5l-3-5 3-5m0 4-3 1-1 4"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4v10l-9 4-9-4V7Zm0 0 9 4 9-4M12 11v10M7 5l9 4"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m12 3 10 18H2L12 3Z"/><path d="M12 10v5m0 3h.01"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 6-4 9-9 11C7 21 3 18 3 12V6l9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><circle cx="8" cy="9" r="2"/><path d="m2 17 6-5 5 4 3-3 6 5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 11a9 9 0 0 0-15-6L3 8m0-5v5h5M3 13a9 9 0 0 0 15 6l3-3m0 5v-5h-5"/></symbol>
+    <symbol id="i-lightning" viewBox="0 0 24 24"><path d="m14 2-9 11h7l-2 9 9-12h-7l2-8Z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 11v6m0-10h.01"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  </svg>
+
+  <div class="announcement"><span class="announcement-dot"></span> Better sorting begins with a single photo <span class="announcement-divider">·</span> Made for the future of circular living</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="WasteWise AI home"><span class="brand-symbol"><svg><use href="#i-leaf"/></svg></span><span>WasteWise<span class="brand-ai">.ai</span></span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a href="#identify">Try the AI</a><a href="#categories">Waste guide</a><a href="#how-it-works">How it works</a><a href="#learn">Why it matters</a></nav>
+    <a class="nav-cta" href="#identify">Start sorting <svg><use href="#i-arrow"/></svg></a>
+    <button class="mobile-nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden><a href="#identify">Try the AI</a><a href="#categories">Waste guide</a><a href="#how-it-works">How it works</a><a href="#learn">Why it matters</a></nav>
+
+  <main id="top">
+    <section class="hero" id="identify">
+      <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> INTELLIGENT WASTE SEGREGATION</div>
+          <h1>Every waste<br />has its <em>place<span class="hero-dot">.</span></em></h1>
+          <p class="hero-description">Not sure where it goes? Just show us. Our AI helps identify everyday waste and guides you towards a cleaner, greener choice.</p>
+          <div class="hero-points"><div><span class="point-icon"><svg><use href="#i-camera"/></svg></span>Snap or upload</div><div><span class="point-icon"><svg><use href="#i-spark"/></svg></span>Get AI guidance</div><div><span class="point-icon"><svg><use href="#i-leaf"/></svg></span>Sort responsibly</div></div>
+          <div class="hero-social"><div class="social-avatar-stack"><span>🌱</span><span>♻️</span><span>🌍</span></div><div><strong>Small actions. Real impact.</strong><small>Make every disposal decision count.</small></div></div>
+        </div>
+
+        <div class="scanner-shell" id="scanner">
+          <div class="scanner-header"><div class="scanner-title"><span class="scanner-live"><span></span></span><div><strong>Waste identifier</strong><small>AI-powered sorting assistant</small></div></div><span class="scanner-version">BETA · V2.0</span></div>
+          <div class="scanner-content">
+            <div class="scanner-overline"><span>01 / SCAN YOUR ITEM</span><span class="secure-label"><svg><use href="#i-lock"/></svg> Privacy-aware</span></div>
+            <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload a waste image">
+              <div id="emptyUpload" class="empty-upload">
+                <div class="upload-illustration"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="upload-center"><svg><use href="#i-image"/></svg></div><span class="mini-illustration icon-a">✳</span><span class="mini-illustration icon-b">♻</span></div>
+                <h2>Drop your waste photo here</h2><p>Drag & drop or browse to discover where it belongs.</p>
+                <div class="upload-buttons"><button class="button button-primary" type="button" id="browseBtn"><svg><use href="#i-upload"/></svg> Choose an image</button><button class="button button-light" id="cameraBtn" type="button"><svg><use href="#i-camera"/></svg> Use camera</button></div>
+                <p class="upload-hint">JPG, PNG or WebP · Max 5 MB · One main item per photo</p>
+              </div>
+              <div id="previewUpload" class="preview-upload" hidden><div class="preview-image-wrap"><img id="previewImage" alt="Selected waste item to classify" /><span class="preview-overlay-label"><svg><use href="#i-check"/></svg> IMAGE READY</span></div><div class="preview-details"><div><strong id="previewFilename">Photo ready</strong><small id="previewSize">Ready to scan</small></div><button class="icon-button" id="removeImage" type="button" aria-label="Remove image"><svg><use href="#i-x"/></svg></button></div></div>
+              <div class="scanner-loader" id="scannerLoader" hidden aria-live="polite"><div class="loading-core"><svg><use href="#i-spark"/></svg></div><div class="load-rings"></div><strong>Looking a little closer...</strong><p id="loadingStep">Preparing your photo</p><div class="loading-track"><span id="loadingProgress"></span></div></div>
+            </div>
+            <input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp" hidden />
+            <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden />
+            <div class="scanner-controls"><div><span class="engine-heading">VISION ENGINE</span><div class="engine-selector" role="group" aria-label="AI engine"><button class="engine-choice selected" type="button" id="browserMode" aria-pressed="true">On-device</button><button class="engine-choice" type="button" id="cloudMode" aria-pressed="false">Cloud AI</button></div></div><div class="engine-info" id="engineInfo">CLIP model runs in your browser. First use requires a model download.</div></div>
+            <div class="scanner-error" id="scannerError" hidden role="alert"><svg><use href="#i-alert"/></svg><p id="errorText"></p><button type="button" id="errorDismiss" aria-label="Dismiss error"><svg><use href="#i-x"/></svg></button></div>
+            <button id="analyzeBtn" class="analyze-button" type="button" disabled><span><svg><use href="#i-spark"/></svg> Identify my waste</span><svg><use href="#i-arrow"/></svg></button>
+            <p class="scanner-footnote"><svg><use href="#i-info"/></svg> AI can make mistakes. Always check local collection guidelines.</p>
+          </div>
+          <div class="scanner-footer"><span><span class="status-pulse"></span> Ready to analyze</span><span>Powered by real computer vision <svg><use href="#i-spark"/></svg></span></div>
+        </div>
+      </div>
+      <div class="hero-bottom-ornament" aria-hidden="true"><svg viewBox="0 0 1440 108" preserveAspectRatio="none"><path fill="#f8f9f3" d="M0 65c174-22 313 29 501 15 169-13 287-63 459-48 164 15 295 49 480 22v54H0Z"/></svg></div>
+    </section>
+
+    <section class="results-section" id="resultsSection" hidden aria-live="polite"><div class="container"><div class="section-kicker"><span class="kicker-stroke"></span> YOUR SORTING RESULT</div>
+      <div class="result-layout"><div class="result-main"><div class="result-topline"><span id="resultStatus" class="result-kicker">IMAGE ANALYZED</span><button class="text-action" type="button" id="scanAgain"><svg><use href="#i-refresh"/></svg> Scan another</button></div>
+        <div id="resultIdentified" hidden><div class="result-identity"><div class="result-thumbnail"><img id="resultImage" alt="Your scanned waste photograph" /></div><div class="result-identity-text"><p>IDENTIFIED OBJECT</p><h2 id="detectedName">—</h2><span id="modelAttribution">Detected using AI vision</span></div></div><div class="result-category"><span class="result-category-symbol" id="resultSymbol">♻</span><div><small>SUGGESTED WASTE CATEGORY</small><strong id="resultCategoryName">—</strong><span id="resultStream">—</span></div></div><div class="disposal-advice"><span class="disposal-icon"><svg><use href="#i-check"/></svg></span><div><small>HERE'S WHAT TO DO</small><p id="disposalText"></p></div></div><div class="result-why"><strong>Why this category?</strong><p id="resultWhy"></p></div><p class="result-caution" id="resultNote"></p><div class="alternatives" id="alternativesWrap" hidden><strong>Other visually possible items</strong><div id="alternativesList"></div></div></div>
+        <div id="resultNotCertain" hidden><div class="uncertain-icon"><svg><use href="#i-info"/></svg></div><h2 id="uncertainTitle">We can't identify this confidently.</h2><p id="uncertainDescription">Please try a clearer photo with one item in the frame, or manually select its category.</p><div class="uncertain-img"><img id="uncertainImage" alt="Uncertain waste item photograph" /></div></div>
+        <button class="correction-trigger" type="button" id="correctionTrigger"><svg><use href="#i-refresh"/></svg> Something not right? Correct the result <svg class="correction-chevron"><use href="#i-chevron"/></svg></button>
+        <div class="correction-panel" id="correctionPanel" hidden><label for="correctItem">Choose the waste item you recognise</label><select id="correctItem"><option value="">Select an item...</option></select><label for="correctCondition">Is the paper or cardboard food-soiled?</label><select id="correctCondition"><option value="unknown">Not sure / not applicable</option><option value="clean">Clean / dry</option><option value="soiled">Greasy / food-soiled</option></select><button type="button" class="button button-primary" id="applyCorrection">Apply correction <svg><use href="#i-arrow"/></svg></button><p>Manual selections are labelled as such and are not counted as AI predictions.</p></div>
+      </div><aside class="result-sidebar"><div class="result-tip-card"><div class="tip-icon">✳</div><small>A LITTLE REMINDER</small><h3>Good habits make better neighbourhoods.</h3><p>Separating waste where it's generated makes recycling safer and more effective for everyone involved.</p><a href="#categories">Explore the waste guide <svg><use href="#i-arrow"/></svg></a></div><div class="result-image-note">The AI analyzes the uploaded image. It does not use filenames to guess what the item is.</div></aside></div>
+    </div></section>
+
+    <section id="categories" class="categories-section section-spacing"><div class="container"><div class="section-heading-grid"><div><div class="section-kicker"><span class="kicker-stroke"></span> KNOW YOUR WASTE</div><h2>Six categories.<br /><em>One cleaner planet.</em></h2></div><div class="section-heading-aside"><p>Waste sorting isn't about memorising bin colours. It's about understanding materials, risk, and what happens next.</p><span class="small-bubble">Explore all six <svg><use href="#i-chevron"/></svg></span></div></div>
+      <div class="category-grid" id="categoryGrid"></div>
+      <div class="rule-banner"><span class="rule-banner-icon"><svg><use href="#i-info"/></svg></span><p><strong>India's 2026 rules use four source-segregation streams:</strong> wet, dry, sanitary, and special care. Our six learning categories split dry waste into recyclable/non-recyclable and highlight e-waste separately. E-waste, batteries and certain hazardous waste also have their own handling rules. Always follow your local authorised collection system.</p><a href="https://www.swm.cpcb.gov.in/" rel="noopener noreferrer" target="_blank">CPCB guidance <svg><use href="#i-arrow"/></svg></a></div>
+    </div></section>
+
+    <section id="how-it-works" class="how-section section-spacing"><div class="container how-grid"><div class="how-copy"><div class="section-kicker light"><span class="kicker-stroke"></span> THE INTELLIGENCE BEHIND IT</div><h2>Smart technology.<br /><em>Thoughtful choices.</em></h2><p>WasteWise connects visual recognition with carefully written disposal guidance. Real models identify what they see; clear rules explain what to do next.</p><div class="model-honesty"><svg><use href="#i-shield"/></svg><div><strong>No invented certainty.</strong><span>Ambiguous results are flagged. Browser-model scores reflect similarity, not calibrated accuracy.</span></div></div></div>
+      <div class="pipeline-card"><div class="pipeline-title"><span>AI PROCESSING PIPELINE</span><span class="pipeline-active-dot"></span></div><div class="pipeline-steps" id="pipelineSteps"><button type="button" class="pipeline-step active" data-step="0"><span>01</span><svg><use href="#i-camera"/></svg><strong>Image</strong></button><span class="pipeline-arrow">→</span><button type="button" class="pipeline-step" data-step="1"><span>02</span><svg><use href="#i-image"/></svg><strong>Prepare</strong></button><span class="pipeline-arrow">→</span><button type="button" class="pipeline-step" data-step="2"><span>03</span><svg><use href="#i-cpu"/></svg><strong>Vision AI</strong></button><span class="pipeline-arrow">→</span><button type="button" class="pipeline-step" data-step="3"><span>04</span><svg><use href="#i-recycle"/></svg><strong>Classify</strong></button><span class="pipeline-arrow">→</span><button type="button" class="pipeline-step" data-step="4"><span>05</span><svg><use href="#i-check"/></svg><strong>Guide</strong></button></div><div class="pipeline-detail"><div class="pipeline-detail-top"><span id="pipelineDetailNum">STEP 01 / 05</span><span class="pipeline-detail-icon"><svg><use href="#i-spark"/></svg></span></div><h3 id="pipelineDetailTitle">You provide the photo</h3><p id="pipelineDetailText">Use a clear image of one main waste item. Your camera or photo gallery works.</p></div><div class="pipeline-bottom"><span>CLICK ANY STEP TO EXPLORE</span><span>01—05</span></div></div></div></section>
+
+    <section class="examples-section section-spacing" id="learn"><div class="container"><div class="section-heading-grid examples-heading"><div><div class="section-kicker"><span class="kicker-stroke"></span> LITTLE CHOICES, BIG DIFFERENCE</div><h2>Sort smarter.<br /><em>Live greener.</em></h2></div><p>The difference between correctly sorted waste and a contaminated recycling bin is often just one simple decision.</p></div><div class="example-grid"><article class="example-card"><div class="example-object bottle-art"><div class="bottle-cap"></div><div class="bottle-neck"></div><div class="bottle-body"><div class="bottle-label">WATER</div></div></div><div class="example-body"><span class="example-num">EXAMPLE 01</span><h3>That empty plastic bottle</h3><p><span class="example-right"><svg><use href="#i-check"/></svg> Do this</span> Empty and rinse before putting in accepted dry recycling.</p><p><span class="example-wrong"><svg><use href="#i-x"/></svg> Not this</span> Throw a half-full bottle into mixed trash.</p></div></article><article class="example-card"><div class="example-object banana-art"><div class="banana-curve"></div><span class="banana-star">✳</span></div><div class="example-body"><span class="example-num">EXAMPLE 02</span><h3>That banana peel</h3><p><span class="example-right"><svg><use href="#i-check"/></svg> Do this</span> Compost it or use a dedicated wet-waste container.</p><p><span class="example-wrong"><svg><use href="#i-x"/></svg> Not this</span> Mix it with dry paper and recyclable plastic.</p></div></article><article class="example-card"><div class="example-object battery-art"><div class="battery-shape"><span>+ —</span></div><span class="battery-spark">✳</span></div><div class="example-body"><span class="example-num">EXAMPLE 03</span><h3>That used battery</h3><p><span class="example-right"><svg><use href="#i-check"/></svg> Do this</span> Keep it safe for authorised battery collection.</p><p><span class="example-wrong"><svg><use href="#i-x"/></svg> Not this</span> Crush or throw it into regular household bins.</p></div></article></div></div></section>
+
+    <section class="closing-section"><div class="container closing-inner"><div><div class="section-kicker light"><span class="kicker-stroke"></span> THE CHANGE STARTS HERE</div><h2>Less guessing.<br /><em>More doing.</em></h2><p>One photo, a better decision, and a small step toward a more circular world.</p><a href="#identify" class="closing-cta">Identify your waste <svg><use href="#i-arrow"/></svg></a></div><div class="closing-visual" aria-hidden="true"><div class="planet-ring ring-1"></div><div class="planet-ring ring-2"></div><div class="planet-main"><span>🌍</span></div><span class="floating-leaf leaf-1">✳</span><span class="floating-leaf leaf-2">✳</span><span class="floating-leaf leaf-3">✳</span></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-top"><div><a class="brand brand-footer" href="#top"><span class="brand-symbol"><svg><use href="#i-leaf"/></svg></span><span>WasteWise<span class="brand-ai">.ai</span></span></a><p>Making the right choice the easy choice.</p></div><div class="footer-links"><a href="#identify">AI scanner</a><a href="#categories">Waste guide</a><a href="#how-it-works">How AI works</a><a href="https://swm.cpcb.gov.in/" target="_blank" rel="noopener noreferrer">Official guidance ↗</a></div></div><div class="container footer-bottom"><span>© 2026 WasteWise AI · Built for learning and better living.</span><span>Identify thoughtfully. Dispose responsibly. <span class="heart">♥</span></span></div></footer>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

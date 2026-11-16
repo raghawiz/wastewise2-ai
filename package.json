@@ -1,0 +1,14 @@
+{
+  "name": "wastewise-ai",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Honest AI-powered waste segregation aligned with Indian SWM Rules 2026",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm test && npm run build"
+  },
+  "engines": { "node": ">=20" }
+}
